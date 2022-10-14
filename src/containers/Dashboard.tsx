@@ -3,7 +3,7 @@ import Template from "./Template";
 import Left from "../assets/Left.svg";
 import Righ from "../assets/Right.svg";
 import { Tabs } from "../assets/Tabs";
-import { HeroImage, ResponsiveLaptop, ResponsiveMobile } from "../style/Styles";
+import { HeroImage, ResponsiveLaptop, ResponsiveMobile,NoFlex } from "../style/Styles";
 import AlbumCover from "../componenets/AlbumCover";
 import Burna from "../assets/Album/brnaBoy.svg";
 import Lo from "../assets/Album/lojay.svg";
@@ -51,7 +51,8 @@ const App = () => {
       <HeroImage />
       <div style={{ cursor: "pointer" }}>
         <h1 style={{ color: "white" }}>Welcome Back!</h1>
-        <div style={{ display: "flex", flexWrap: "wrap" }}>
+        {/* <div style={{ display: "flex", flexWrap: "wrap" }}> */}
+          <NoFlex>
           {[1, 2, 3, 1, 2, 3].map((ind, index) => (
             <AlbumCover
               key={ind}
@@ -61,12 +62,12 @@ const App = () => {
               ind={ind}
             />
           ))}
-        </div>
+        </NoFlex>
       </div>
 
       <div style={{ marginTop: "40px", cursor: "pointer" }}>
         <h1 style={{ color: "white" }}>Cheers to the Weekend </h1>
-        <div style={{ display: "flex", flexWrap: "wrap" }}>
+        <NoFlex>
           {[1, 2, 3, 1, 2, 3].map((ind, index) => (
             <AlbumCover
               key={ind}
@@ -76,7 +77,7 @@ const App = () => {
               ind={ind}
             />
           ))}
-        </div>
+        </NoFlex>
       </div>
     </div>
   );

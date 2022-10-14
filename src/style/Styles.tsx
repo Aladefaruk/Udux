@@ -14,6 +14,7 @@ export const LitleHeader = styled.div`
   display: flex;
   justify-content: evenly;
   align-items: center;
+  padding: 18px 0;
   @media ${devices.laptop} {
     position: sticky;
     width: 231px;
@@ -80,7 +81,7 @@ export const HeroImage = styled.div`
   background-repeat: no-repeat;
   background-size: contain;
   height: 175px;
-  margin-top:"20px";
+  
   @media ${devices.laptop} {
     background-image: url(${HeroLG});
     background-position: center;
@@ -118,4 +119,15 @@ export const Template = styled.div`
   position: absolute;
   top: 0;
   left: 0;
+`;
+
+export const NoFlex = styled.div`
+  display: flex;
+  overflow:hidden;
+  @media ${devices.laptop} {
+    width:"100%"
+    display: flex;
+    flex-wrap:wrap;
+    overflow-y:hidden;
+  }
 `;

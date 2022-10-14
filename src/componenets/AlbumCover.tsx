@@ -15,6 +15,7 @@ const AlbumCover = ({image,name, artists,ind}:{image:string,name:string, artists
       bg1: "linear-gradient(89.79deg, #ADC0D1 123.38%, #204F9D -19.39%)",
       bg2: "linear-gradient(89.79deg, #204F9D -19.39%, #ADC0D1 123.38%)",
     };
+   
   return (
     <div
       style={{
