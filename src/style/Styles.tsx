@@ -2,7 +2,7 @@ import styled from "styled-components";
 import { devices } from "./Devices";
 import HeroSM from "../assets/HeroSM.svg";
 import HeroLG from "../assets/HeroLG.svg";
-import { constants } from "fs/promises";
+import Mobile from "../assets/MobileNav.svg"
 
 export const LitleHeader = styled.div`
   text-align: center;
@@ -129,5 +129,23 @@ export const NoFlex = styled.div`
     display: flex;
     flex-wrap:wrap;
     overflow-y:hidden;
+  }
+`;
+
+export const MobileNav = styled.div`
+  display: flex;
+  justify-content: space-evenly;
+  overflow:hidden;
+  width:100%;
+  background-image: url(${Mobile});
+  background-color:black;
+  padding:20px 0;
+  position:fixed;
+  bottom:0;
+
+  
+  @media ${devices.laptop} {
+    display: none;
+   
   }
 `;

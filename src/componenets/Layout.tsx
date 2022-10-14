@@ -4,6 +4,7 @@ import LittleHeader from './LittleHeader';
 import Nav from './Nav';
 import OtherSide from './OtherSide';
 import { Template } from '../style/Styles';
+import MobileNav from './MobileNav';
 
 export default function Layout({App}:{App:any}) {
   return (
@@ -17,6 +18,7 @@ export default function Layout({App}:{App:any}) {
       <div style={{display:"block"}}>
         <OtherSide App={App} />
       </div>
+      <MobileNav/>
       </LayOut>
     
   );
