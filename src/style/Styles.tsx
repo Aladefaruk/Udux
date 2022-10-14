@@ -1,9 +1,8 @@
 import styled from "styled-components";
 import { devices } from "./Devices";
-import HeroSM from '../assets/HeroSM.svg';
-import HeroLG from '../assets/HeroLG.svg'
+import HeroSM from "../assets/HeroSM.svg";
+import HeroLG from "../assets/HeroLG.svg";
 import { constants } from "fs/promises";
-
 
 export const LitleHeader = styled.div`
   text-align: center;
@@ -14,15 +13,11 @@ export const LitleHeader = styled.div`
   background-color: rgba(15, 15, 15, 0.9);
   display: flex;
   justify-content: evenly;
-  padding: 18px 32px;
   align-items: center;
   @media ${devices.laptop} {
     position: sticky;
     width: 231px;
-    // height: 100%;
-    // top: 0;
-    // left: 0;
-
+    padding: 18px 32px;
     background: rgba(15, 15, 15, 0.9);
   }
 `;
@@ -43,16 +38,14 @@ export const ProfileImage = styled.img`
 `;
 
 export const OtherS = styled.div`
-
   width: 100%;
-  height:100%;
-  display:block;
+  height: 100%;
+  display: block;
   background-color: rgba(15, 15, 15, 1);
   @media ${devices.laptop} {
     width: (100%- 231px);
-    height:100%;
+    height: 100%;
     background: black;
- 
   }
 `;
 
@@ -67,23 +60,27 @@ export const SideNav = styled.div`
     display: block;
     overflow-y: scroll;
     padding: 38px 34px;
-    margin-bottom:50px;
-
+    margin-bottom: 50px;
     &::-webkit-scrollbar {
       width: 3px;
-      outline:none;
-    }    
-    
+      outline: none;
+    }
+
     &::-webkit-scrollbar-thumb {
       background: #fbba12;
       width: 3px;
-      outline:none;
+      outline: none;
     }
   }
 `;
 export const HeroImage = styled.div`
   width: 100%;
   background-image: url(${HeroSM});
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+  height: 175px;
+  margin-top:"20px";
   @media ${devices.laptop} {
     background-image: url(${HeroLG});
     background-position: center;
@@ -94,32 +91,31 @@ export const HeroImage = styled.div`
 `;
 
 export const LayOut = styled.div`
-
   width: 100%;
-  display:block;
- 
+  display: block;
+
   @media ${devices.laptop} {
-    width:(100%-232px);
-    display:flex;
+    width: (100%-232px);
+    display: flex;
   }
 `;
 
 export const ResponsiveLaptop = styled.div`
   display: none;
-   @media ${devices.laptop} {
-    display:block
+  @media ${devices.laptop} {
+    display: block;
   }
 `;
 
 export const ResponsiveMobile = styled.div`
   display: block;
-   @media ${devices.laptop} {
-    display:none
+  @media ${devices.laptop} {
+    display: none;
   }
-`
+`;
 
 export const Template = styled.div`
-  position:absolute;
-  top:0;
-  left:0;
+  position: absolute;
+  top: 0;
+  left: 0;
 `;

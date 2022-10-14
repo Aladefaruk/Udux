@@ -14,7 +14,7 @@ export default function Layout({App}:{App:any}) {
         <Nav/>
       </div>
     
-      <div style={{display:"block",position:"relative", width:"(100%-237px"}}>
+      <div style={{display:"block"}}>
         <OtherSide App={App} />
       </div>
       </LayOut>

@@ -25,29 +25,31 @@ const App = () => {
         padding: "0 10px",
       }}
     >
-      <div
-        style={{
-          display: "flex",
-          alignItems: "center",
-          padding: "0 10px",
-          height: "100px",
-        }}
-      >
-        <div style={{ display: "flex" }}>
-          <img src={Left} alt="" width="40px" height="40px" />
-          <img
-            src={Righ}
-            alt=""
-            width="40px"
-            height="40px"
-            style={{ padding: "0px 8px" }}
-          />
-        </div>
+      <ResponsiveLaptop>
+        <div
+          style={{
+            display: "flex",
+            alignItems: "center",
+            padding: "0 10px",
+            height: "100px",
+          }}
+        >
+          <div style={{ display: "flex" }}>
+            <img src={Left} alt="" width="40px" height="40px" />
+            <img
+              src={Righ}
+              alt=""
+              width="40px"
+              height="40px"
+              style={{ padding: "0px 8px" }}
+            />
+          </div>
 
-        <img src={Tabs.Search} alt="" style={{ marginLeft: "10%" }} />
-      </div>
+          <img src={Tabs.Search} alt="" style={{ marginLeft: "10%" }} />
+        </div>
+      </ResponsiveLaptop>
       <HeroImage />
-      <div style={{cursor:"pointer"}}>
+      <div style={{ cursor: "pointer" }}>
         <h1 style={{ color: "white" }}>Welcome Back!</h1>
         <div style={{ display: "flex", flexWrap: "wrap" }}>
           {[1, 2, 3, 1, 2, 3].map((ind, index) => (
@@ -62,7 +64,7 @@ const App = () => {
         </div>
       </div>
 
-      <div style={{ marginTop: "40px", cursor:"pointer" }}>
+      <div style={{ marginTop: "40px", cursor: "pointer" }}>
         <h1 style={{ color: "white" }}>Cheers to the Weekend </h1>
         <div style={{ display: "flex", flexWrap: "wrap" }}>
           {[1, 2, 3, 1, 2, 3].map((ind, index) => (
