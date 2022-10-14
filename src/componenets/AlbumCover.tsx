@@ -42,7 +42,7 @@ const AlbumCover = ({image,name, artists,ind}:{image:string,name:string, artists
           paddingTop: "15px",
         }}
       >
-        <div style={{ width: "80%" }}>
+        <div style={{ width: "80%", padding:"0 20px", marginRight:"20px" }}>
           <div
             style={{
               fontWeight: "700",
