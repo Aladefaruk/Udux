@@ -3,15 +3,18 @@ import { LayOut } from '../style/Styles'
 import LittleHeader from './LittleHeader';
 import Nav from './Nav';
 import OtherSide from './OtherSide';
+import { Template } from '../style/Styles';
 
 export default function Layout({App}:{App:any}) {
   return (
     <LayOut >
+     
       <div style={{ display: "block" }}>
         <LittleHeader />
-        <Nav />
+        <Nav/>
       </div>
-      <div style={{display:"block"}}>
+    
+      <div style={{display:"block",position:"relative", width:"(100%-237px"}}>
         <OtherSide App={App} />
       </div>
       </LayOut>

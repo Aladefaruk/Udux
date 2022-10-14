@@ -17,8 +17,8 @@ export const LitleHeader = styled.div`
   padding: 18px 32px;
   align-items: center;
   @media ${devices.laptop} {
+    position: sticky;
     width: 231px;
-    // position: fixed;
     // height: 100%;
     // top: 0;
     // left: 0;
@@ -118,4 +118,8 @@ export const ResponsiveMobile = styled.div`
   }
 `
 
-
+export const Template = styled.div`
+  position:absolute;
+  top:0;
+  left:0;
+`;
