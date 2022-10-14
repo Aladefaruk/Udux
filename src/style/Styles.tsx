@@ -2,6 +2,7 @@ import styled from "styled-components";
 import { devices } from "./Devices";
 import HeroSM from '../assets/HeroSM.svg';
 import HeroLG from '../assets/HeroLG.svg'
+import { constants } from "fs/promises";
 
 
 export const LitleHeader = styled.div`
@@ -17,10 +18,10 @@ export const LitleHeader = styled.div`
   align-items: center;
   @media ${devices.laptop} {
     width: 231px;
-    position: fixed;
-    height: 100%;
-    top: 0;
-    left: 0;
+    // position: fixed;
+    // height: 100%;
+    // top: 0;
+    // left: 0;
 
     background: rgba(15, 15, 15, 0.9);
   }
@@ -116,3 +117,5 @@ export const ResponsiveMobile = styled.div`
     display:none
   }
 `
+
+
