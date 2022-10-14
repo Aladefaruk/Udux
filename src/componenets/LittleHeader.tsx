@@ -5,7 +5,7 @@ import PP from '../assets/profile.svg'
 export default function LittleHeader() {
   return (
     <LitleHeader >
-      <ProfileImage  src={PP} alt="" style={{marginLeft:"20px"}}/>
+      <ProfileImage  src={PP} alt="" style={{marginLeft:"10px"}}/>
       <Text style={{}}>Hey! Aleem</Text>
     </LitleHeader>
   );

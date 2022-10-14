@@ -1,4 +1,5 @@
 import React from "react";
+import '../App.css'
 
 
 const AlbumCover = ({image,name, artists,ind}:{image:string,name:string, artists:string[], ind:number}) => {
@@ -25,6 +26,7 @@ const AlbumCover = ({image,name, artists,ind}:{image:string,name:string, artists
         border: "1px solid #707070",
         margin: "10px",
       }}
+      className="grow"
     >
       <div style={{ height: "34px", background: "black" }}></div>
       <div
