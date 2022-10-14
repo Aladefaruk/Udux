@@ -3,7 +3,7 @@ import Template from "./Template";
 import Left from "../assets/Left.svg";
 import Righ from "../assets/Right.svg";
 import { Tabs } from "../assets/Tabs";
-import { HeroImage, ResponsiveLaptop, ResponsiveMobile,NoFlex } from "../style/Styles";
+import { HeroImage, ResponsiveLaptop, ResponsiveMobile,NoFlex, Titles } from "../style/Styles";
 import AlbumCover from "../componenets/AlbumCover";
 import Burna from "../assets/Album/brnaBoy.svg";
 import Lo from "../assets/Album/lojay.svg";
@@ -50,9 +50,28 @@ const App = () => {
       </ResponsiveLaptop>
       <HeroImage />
       <div style={{ cursor: "pointer" }}>
-        <h1 style={{ color: "white" }}>Welcome Back!</h1>
+        <div
+          style={{
+            display: "flex",
+            margin: "20px 10px",
+            justifyContent: "space-between",
+          }}
+        >
+          <Titles>Welcome Back!</Titles>
+          <ResponsiveMobile>
+            <span
+              style={{
+                color: "rgba(217, 217, 217, 0.9)",
+                paddingTop: "10px",
+                fontSize: "12px",
+              }}
+            >
+              See More
+            </span>
+          </ResponsiveMobile>
+        </div>
         {/* <div style={{ display: "flex", flexWrap: "wrap" }}> */}
-          <NoFlex>
+        <NoFlex>
           {[1, 2, 3, 1, 2, 3].map((ind, index) => (
             <AlbumCover
               key={ind}
@@ -65,8 +84,27 @@ const App = () => {
         </NoFlex>
       </div>
 
-      <div style={{ marginTop: "40px", cursor: "pointer" }}>
-        <h1 style={{ color: "white" }}>Cheers to the Weekend </h1>
+      <div style={{ cursor: "pointer" }}>
+        <div
+          style={{
+            display: "flex",
+            margin: "20px 10px",
+            justifyContent: "space-between",
+          }}
+        >
+          <Titles>Cheers to the Weekend </Titles>
+          <ResponsiveMobile>
+            <span
+              style={{
+                color: "rgba(217, 217, 217, 0.9)",
+                paddingTop: "10px",
+                fontSize: "12px",
+              }}
+            >
+              See More
+            </span>
+          </ResponsiveMobile>
+        </div>
         <NoFlex>
           {[1, 2, 3, 1, 2, 3].map((ind, index) => (
             <AlbumCover

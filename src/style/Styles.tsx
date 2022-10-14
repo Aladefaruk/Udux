@@ -146,6 +146,17 @@ export const MobileNav = styled.div`
   
   @media ${devices.laptop} {
     display: none;
-   
+  }
+`;
+
+export const Titles = styled.div`
+  font-style: normal;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 17px;
+  color:#FFFFFF;
+  @media ${devices.laptop} {
+    font-size: 20px;
+    line-height: 34px;
   }
 `;
